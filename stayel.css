@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    height: 100vh;
+}
+
+nav{
+    width: 100%;
+    position:fixed;
+    z-index:10;
+    margin: 5px;
+    padding: 30px;
+}
+nav h1{
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    display: inline;
+    font-size: 25px;
+    color:rgb(8, 3, 32);
+}
+nav ul{
+display: flex;
+justify-content: space-evenly;
+list-style: none;
+
+}
+ul li a{
+
+    font-family: "Abel", sans-serif;
+    font-size: 17px;
+    text-decoration: none;
+    text-transform: uppercase;
+color: rgb(112, 13, 6);
+}
+ul a:hover{
+    border-bottom: 2px solid rgb(8, 3, 32);
+
+}
+
+.home{
+    display: flex;
+   justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90%;
+   background:url(img/back1.png)no-repeat 50%50% scroll;
+background-size: cover;
+   
+}
+.text-home{
+    text-align: center;
+width: 90%;
+margin: auto;
+}
+.text-home h2,h3{
+    color: rgb(73, 27, 27);
+font-size: 40px;
+margin-top: 5px;
+}
+.text-home h2{
+    font-family: "Kanit", sans-serif;
+}
+.text-home h3{
+    font-size: 45px;
+    font-family: "Abel", sans-serif;
+    margin-bottom: 30px;
+}
+.text-home a{
+    padding-top: 8px;
+    display: inline-block;
+    width: 200px;
+    height: 40px;
+    background-color: rgb(73, 27, 27);
+color: white;
+text-decoration: none;
+font-size: 25px;
+font-family: "Kanit", sans-serif;
+border-radius: 8px;
+border: 1px solid rgb(73, 27, 27);
+
+}
+.text-home a:hover{
+    border: 1px solid white;
+    background-color: transparent;
+    transition: 0.3s;
+}
+
+.about{
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card{
+margin: 10px;
+    width: 30%;
+    height: 50%;
+    color:rgb(73, 27, 27);
+   
+    padding: 10px;
+    border-radius: 5%;
+    transition: 0.2s;
+}
+.card:hover{
+    box-shadow: 3px 2px 3px  blueviolet;
+   transform: scale(1.05);
+}
+.about-img{
+    cursor: pointer;
+    width: 70px;
+    /* height: 70px;
+    border: 3px solid black; */
+    border-radius: 50%;
+    margin: auto;
+}
+.about-text{
+    margin-top: 10px;
+    text-align: center;
+    background-color:rgba(255, 255, 255, 0.753);
+
+}
+.about-text h4{
+    margin: 15px;
+    font-family: "Kanit", sans-serif;
+    
+}
+.about-text p{
+    font-family: "Cabin", sans-serif;
+    margin: 10px;
+}
+.trip{
+    background-color: rgb(249 244 244 / 33%);
+    height: 100vh;
+    width: 100%;
+}
+.trip-text{
+    font-family: "Abel", sans-serif;
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+    color: rgb(73, 27, 27);
+}
+.trip-text h2{
+    text-align: center;
+    margin: 20px;
+    font-size: 25px;
+}
+.trip-text p{
+    font-size: 20px;
+    margin: 20px;
+}
+.trip-video{
+    margin-top: 50px;
+    width: 100%;
+    margin: auto;
+    
+}
+.trip-video video{
+    width:100%;
+    height: 400px;
+    margin: auto;
+}
+.info-place{
+    height: 100vh;
+}
+.contner{
+ width: 100%;
+ height: 70%;
+ background-color:white;
+ display: flex;
+ justify-content: space-evenly;
+ align-items: center;
+}
+.item{
+    height: 271px;
+    width: 30%;
+    background-color: azure;
+    display: flex;
+}
+.item-text{
+    font-family: "Abel", sans-serif; 
+    margin: 5px;
+    text-align: center;
+    width: 50%;
+}
+.item-text p{
+    font-size: 18px;
+}
+.item-text a{
+    display: inline-block;
+    width: 130px;
+    height: 28px;
+    background-color: transparent;
+color: rgb(130, 174, 231);
+text-decoration: none;
+font-size: 20px;
+font-family: "Abel", sans-serif; 
+border-radius: 5px;
+border: 1px solid rgb(96, 205, 233);
+
+
+}
+.item-text a:hover{
+    background-color: rgb(162, 185, 194);
+    color: white;
+    transition: 0.3s;
+}
+.item-img  {
+    width: 50%;
+    overflow: hidden;
+}
+
+.item-img img {
+   
+    width: 100%;
+    height: 100%;
+    transition: 400ms;
+}
+.item-img img:hover{
+    scale: 120%;
+}
+.info-text{
+    font-size: 24px;
+    text-align: center;
+    font-family: "Abel", sans-serif; 
+}
+.info-text h4,p,a{
+    margin: 10px;
+}
+.info-text a{
+    display: inline-block;
+    width: 160px;
+    height: 35px;
+    background-color: transparent;
+color: rgb(130, 174, 231);
+text-decoration: none;
+font-size: 23px;
+font-family: "Abel", sans-serif; 
+border-radius: 5px;
+border: 2px solid rgb(96, 205, 233);;
+}
+.info-text a:hover{
+    background-color: rgb(156, 86, 221);
+    color: white;
+    transition: 0.3s;
+}
+footer{
+height: 15vh;
+background-color: rgb(195, 208, 245);
+text-align: center;
+color: white;
+align-items: center;
+display: flex;
+justify-content: center;
+}
+span{
+    color: rgb(19, 26, 46);
+}
